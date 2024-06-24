@@ -3,13 +3,46 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.min.css">
+	<script src="js/main.min.js"></script>
   <title>Document</title>
 </head>
-<body>
-  <!--=include header.html --> <!-- с помощью такой конструкции инклудим компоненты -->
-  <main> 
+<body class="body">
+
+  <header class="header">
+		<div class="container">
+			<div class="header__wrapper">
+				
+				<span class="header__logo">logo</span>
+				<nav class="navigation">
+					<ul class="navigation__list">
+						<li class="navigation__item">
+							<a href="#" class="navigation__link">Home</a>
+						</li>
+						<li class="navigation__item">
+							<a href="#" class="navigation__link">Careers</a>
+						</li>
+						<li class="navigation__item">
+							<a href="#" class="navigation__link">FAQ</a>
+						</li>
+						<li class="navigation__item">
+							<a href="#" class="navigation__link">Customers</a>
+						</li>
+					</ul>
+				</nav>
+				<button class="header__btn-modal">Open Modal</button>
+				
+			</div>
+		</div>
+	</header>
+
+  <main class="main"> 
     main 123
   </main>
-  <!--=include footer.html -->
+
+  <footer class="sey">
+    footer
+</footer>
+
 </body>
 </html>

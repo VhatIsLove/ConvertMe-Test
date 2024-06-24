@@ -1,12 +1,5 @@
-.main{
-    padding: auto;
-    .header{
-        background-color: red;
-        margin: auto;
-        padding: 20px;
-    }
-}
+@use "default";
+@use "components/header";
 
-.sey{
-    color: red;
-}
+@import "normalize.css";
+
