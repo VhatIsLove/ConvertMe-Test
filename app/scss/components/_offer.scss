@@ -1,0 +1,27 @@
+@use "variables" as *;
+@use "media" as *;
+
+.offer {
+	background-color: $bg-header;
+	color: $white;
+
+	&__wrapper {
+
+	}
+
+	&__title {
+		
+	}
+
+	&__text {
+		opacity: 0.6;
+	}
+
+	&__btn {
+		
+	}
+
+	&__img {
+		object-fit: cover;
+	}
+}
