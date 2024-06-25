@@ -1,0 +1,40 @@
+@use "variables" as *;
+@use "media" as *;
+
+
+.top {
+	display: flex;
+  flex-direction: column;
+	align-items: center;
+}
+
+.marketing{
+
+	&__title {
+		text-align: center;
+		font-size: 28px;
+		font-weight: 600;
+		line-height: 38px;
+		margin-bottom: 25px;
+		max-width: 424px;
+
+		@include tablet {
+		font-size: 38px;
+		line-height: 48px;
+		max-width: 524px;
+		}
+
+		@include laptop {
+			font-size: 48px;
+    	line-height: 58px;
+    	max-width: 624px;
+		}
+	}
+
+	&__text {
+	}
+
+	&__img {
+	}
+
+}

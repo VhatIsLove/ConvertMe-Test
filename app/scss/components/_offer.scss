@@ -1,24 +1,87 @@
 @use "variables" as *;
 @use "media" as *;
 
+.display-wrapp{
+
+	@include tablet {
+		display: flex;
+		align-items: center;
+	}
+	
+}
+
 .offer {
 	background-color: $bg-header;
 	color: $white;
+	min-height: 780px;
+	padding-top: 30px;
+	margin-bottom: 40px;
+	box-sizing: border-box;
 
-	&__wrapper {
-
+	@include tablet {
+		padding-top: 70px;
+		margin-bottom: 70px;
 	}
 
+	@include laptop {
+    padding-top: 123px;
+		margin-bottom: 130px;
+    background-size: 311px;
+  }
+
 	&__title {
+		font-size: 32px;
+		font-weight: 600;
+		line-height: 38px;
+		margin-bottom: 20px;
+
+		@include tablet {
+		font-size: 42px;
+		line-height: 48px;
+		margin-bottom: 32px;
+		}
+
+		@include laptop {
+			font-size: 56px;
+    	line-height: 68px;
+    	min-width: 624px;
+		}
 		
 	}
 
 	&__text {
 		opacity: 0.6;
+		margin-bottom: 25px;
+
+		@include tablet {
+			margin-bottom: 32px;
+			}
+	
+			@include laptop {
+				margin-bottom: 54px;
+			}
 	}
 
 	&__btn {
-		
+		position: relative;
+		padding: 20px 68px 20px 32px;
+    background-color: #444cfc;
+		background-image: url(/images/bg-btn.svg);
+		background-repeat: no-repeat;
+		color: rgba($color: #fff, $alpha: 0.87);
+		margin-bottom: 15px;
+
+		&:before {
+			content: '';
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+			right: 32px;
+			width: 22px;
+			height: 8px;
+			background-image: url(/images/arrow.svg);
+			background-repeat: no-repeat;
+		}
 	}
 
 	&__img {
