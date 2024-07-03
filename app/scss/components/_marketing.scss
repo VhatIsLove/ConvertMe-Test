@@ -6,15 +6,25 @@
 	display: flex;
   flex-direction: column;
 	align-items: center;
+	text-align: center;
+	margin-bottom: 70px;
+
+	@include tablet {
+		margin-bottom: 150px;
+		}
+
+		@include laptop {
+			margin-bottom: 216px;
+		}
+
 }
 
 .marketing{
 
 	&__title {
-		text-align: center;
 		font-size: 28px;
 		font-weight: 600;
-		line-height: 38px;
+		line-height: 28px;
 		margin-bottom: 25px;
 		max-width: 424px;
 
@@ -32,9 +42,60 @@
 	}
 
 	&__text {
+		max-width: 624px;
+    margin-bottom: 24px;
+
+		@include tablet {
+			max-width: 424px;
+    	margin-bottom: 34px;
+			}
+	
+			@include laptop {
+				max-width: 624px;
+    	margin-bottom: 64px;
+			}
 	}
 
 	&__img {
 	}
 
+}
+
+
+.detalies {
+	background-color: #95c9cd;;
+
+	&__header {
+
+	}
+
+	&__navigation {
+
+	}
+
+	&__navigation-list {
+		text-align: center;
+
+		@include tablet {
+			display: flex;
+    	justify-content: space-evenly;
+		}
+		
+	}
+
+	&__navigation-subtitle {
+		font-size: 24px;
+	}
+
+	&__navigation-subtitle--active {
+
+	}
+
+	&__list {
+		list-style: square;
+	}
+
+	&__item {
+
+	}
 }
