@@ -63,7 +63,16 @@
 
 
 .detalies {
-	background-color: #95c9cd;;
+	background-color: #95c9cd;
+	margin-bottom: 60px;
+
+	@include tablet {
+		margin-bottom: 80px;
+		}
+
+		@include laptop {
+			margin-bottom: 120px;
+		}
 
 	&__header {
 
