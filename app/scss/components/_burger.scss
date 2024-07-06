@@ -1,0 +1,70 @@
+.nav-toggle {
+  display: none;
+}
+
+.nav-toggle-label {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.nav-icon {
+  font-size: 24px;
+  margin-right: 10px;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navigation__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navigation__item {
+  margin-right: 20px;
+}
+
+.navigation__link {
+	color: #333;
+  text-decoration: none;
+}
+
+.navigation__link:hover {
+  color: #666;
+}
+
+/* Адаптивное бургер меню */
+@media (max-width: 768px) {
+  .nav-toggle {
+    display: block;
+  }
+  .navigation {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  .navigation__list {
+    flex-direction: column;
+  }
+  .navigation__item {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+}
+
+.navigation__active{
+	display: block;
+}

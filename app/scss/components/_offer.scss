@@ -2,10 +2,13 @@
 @use "media" as *;
 
 .display-wrapp{
+	padding-bottom: 30px;
 
-	@include tablet {
+	@include laptop {
 		display: flex;
+		justify-content: space-between;
 		align-items: center;
+		column-gap: 30px;
 	}
 	
 }
@@ -29,6 +32,13 @@
     background-size: 311px;
   }
 
+	&__wrapper{
+		@include tablet {
+			max-width: 560px;
+			}
+		
+	}
+
 	&__title {
 		font-size: 32px;
 		font-weight: 600;
@@ -37,14 +47,13 @@
 
 		@include tablet {
 		font-size: 42px;
-		line-height: 48px;
+		line-height: 42px;
 		margin-bottom: 32px;
 		}
 
 		@include laptop {
-			font-size: 56px;
-    	line-height: 68px;
-    	min-width: 624px;
+			font-size: 52px;
+    	line-height: 58px;
 		}
 		
 	}

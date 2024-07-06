@@ -1,9 +1,12 @@
 @use "fonts" as *;
 @use "variables" as *;
 
+@use "burger";
+
 .header {
 	background-color: $bg-header;
 	border-bottom: 1px solid rgba($color: #fff, $alpha: 0.05);
+	position: relative;
 
 	&__wrapper{
 		display: flex;
@@ -52,4 +55,3 @@
 	}
 
 }
-
