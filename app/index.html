@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="css/style.min.css">
-	<script src="js/main.min.js"></script>
+	<script src="js/main.js"></script>
   <title>Document</title>
 </head>
 <body class="body">
@@ -13,13 +13,9 @@
 		<div class="container">
 			<div class="header__wrapper">
 				
-				<label class="nav-toggle-label">
-					<input type="checkbox" id="nav-toggle" class="nav-toggle">
-					<span class="nav-icon"></span>
-      	</label>
-
 				<span class="header__logo">logo</span>
-				<nav class="navigation navigation__active">
+
+				<nav class="navigation">
 					<ul class="navigation__list">
 						<li class="navigation__item">
 							<a href="#" class="navigation__link navigation__link--active">Home</a>
@@ -34,9 +30,15 @@
 							<a href="#" class="navigation__link">Customers</a>
 						</li>
 					</ul>
+
 				</nav>
-				<button class="header__btn-modal">Contact us</button>
 				
+				<button class="header__btn-modal">Contact us</button>
+
+				<button class="burger-btn">
+					<span class="burger-icon"></span>
+				</button>
+
 			</div>
 		</div>
 	</header>

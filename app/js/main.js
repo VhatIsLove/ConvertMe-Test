@@ -1,32 +1,14 @@
-const burgerToggle = document.querySelector('.nav-toggle');
-const navigation = document.querySelector('.navigation');
 
+document.addEventListener('DOMContentLoaded', function() {
+  const burgerBtn = document.querySelector('.burger-btn');
+  const navigation = document.querySelector('.navigation');
 
-function openBurgerMenu() {
-  navigation.classList.add('open');
-  burgerButton.classList.add('navigation__active');
-}
-
-// Функция закрытия бургер меню
-function closeBurgerMenu() {
-  navigation.classList.remove('open');
-  burgerButton.classList.remove('navigation__active');
-}
-
-
-
-burgerToggle.addEventListener('click', () => {
-	if (burgerToggle.classList.contains('open')) {
-    closeBurgerMenu();
+  if (burgerBtn && navigation) {
+    burgerBtn.addEventListener('click', function() {
+      burgerBtn.classList.toggle('active');
+      navigation.classList.toggle('navigation__active');
+    });
   } else {
-    openBurgerMenu();
-  }
-
-})
-
-
-document.addEventListener('click', (event) => {
-  if (!event.target.closest('.navigation') && !event.target.closest('.nav-toggle')) {
-    closeBurgerMenu();
+    console.error('Один или оба элемента не найдены в DOM');
   }
 });
